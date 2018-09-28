@@ -60,14 +60,25 @@ This document is the preliminary version.  If you know of any additional informa
 Kubernetes and Container Guidelines
 ===================================
 
-This document is a set of guidelines for building and using containers on the Kubernetes clusters.   It contains background on the intended use of each cluster,  guidelines for building containers, and guidelines issued by the security group and the Kubernetes admin staff.
+This document is a set of guidelines for building and using containers on the
+Kubernetes clusters. It contains background on the intended use of each
+cluster,  guidelines for building containers, and guidelines issued by the
+security group and the Kubernetes admin staff.
 
 Clusters
--------
+--------
 
-We currently have two Kubernetes clusters.  One is used for development, and the Kubernetes admin staff uses another much smaller cluster for internal testing.  We intend to deploy an additional pre-production Kubernetes cluster.
+We currently have two Kubernetes clusters.  One is used for development, and
+the Kubernetes admin staff uses another much smaller cluster for internal
+testing.  We intend to deploy an additional pre-production Kubernetes cluster.
 
-These are all independent clusters, rather than segmented portions of one cluster.  We need to be able to have independent Kubernetes versions for each of the clusters. The production Kubernetes cluster may be running version running version X.2, the development cluster may be running version X.4 and there may be a deployment of version Z.0 on the testing cluster.  If this were one cluster or even two, we would need to have each of those to have the same version of the Kubernetes system software.
+These are all independent clusters, rather than segmented portions of one 
+cluster.  We need to be able to have independent Kubernetes versions for each
+of the clusters. The production Kubernetes cluster may be running version
+running version X.2, the development cluster may be running version X.4 and 
+there may be a deployment of version Z.0 on the testing cluster.  If this were
+one cluster, we would need to have each of those to have the same
+version of the Kubernetes system software.
 
 
 The pre-production cluster will be used through a VPN for demos and short-term use by users outside of LSST development staff. This cluster will always available for outside users, running the current stable release of the software. The intent of having this cluster is to provide a stable environment for guest users and demos without impacting other ongoing development. There will be limited developer access to this cluster to help perform software upgrades, but we expect this task to transition to other staff when this reaches production.
