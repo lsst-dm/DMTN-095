@@ -50,7 +50,7 @@
 
    Kubernetes and Container Guidelines
 
-   This document is the preliminary version.  If you know of any additional information that needs to be in this document, or if you see something that needs to be corrected, please make a note of it so that it can be included in this document.  When all those comments are collected,  the document will be turned into a DMTN.
+   This document is the preliminary version.  If you know of any additional information that needs to be in this document, or if you see something that needs to be corrected, please make a note of it so that it can be included in this document.
 
 
 
